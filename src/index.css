@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	background-color: #eee;
+}
+.game-box{
+	width: 600px;
+	margin: 50px auto;
+}
+.game-box:after{
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.game-content{
+	width: 450px;
+	height: 450px;
+	float: left;
+	position: relative;
+	background-color: #ffdf00;
+}
+#mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.number{
+	width: 149px;
+	height: 149px;
+	line-height: 150px;
+	box-shadow: 1px 1px 0 0 #fff;
+	background-color: #20a6fa;
+	color: #fff;
+	font-size: 100px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+}
+.animation{
+	-webkit-transition: 0.3s;/*浏览器前缀，兼容其他浏览器 chrome*/
+       -moz-transition: 0.3s;/*firefox*/
+        -ms-transition: 0.3s;/*ie*/
+         -o-transition: 0.3s;/*opera*/
+            transition: 0.3s;	
+}
+.null{
+	display: none;
+}
+.game-control{
+	width: 150px;
+	height: 450px;
+	float: right;
+	background-color: #fff;
+}
+.game-control>div{
+	padding: 10px;
+	font-size: 20px;
+}
+.game-control span{
+	padding: 0 2px;
+}
+.game-control button{
+	outline: none;
+	width: 60px;
+	height: 30px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
