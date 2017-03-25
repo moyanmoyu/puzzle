@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>拼图游戏</title>
+		<link rel="stylesheet" type="text/css" href="src/index.css">
+	</head>
+	<body>
+		<div class="game-box">
+			<div class="game-content">
+				<div class="number" data-title="number_0_0" onclick="move(this)">1</div>
+				<div class="number" data-title="number_0_1" onclick="move(this)">2</div>
+				<div class="number" data-title="number_0_2" onclick="move(this)">3</div>
+				<div class="number" data-title="number_1_0" onclick="move(this)">4</div>
+				<div class="number" data-title="number_1_1" onclick="move(this)">5</div>
+				<div class="number" data-title="number_1_2" onclick="move(this)">6</div>
+				<div class="number" data-title="number_2_0" onclick="move(this)">7</div>
+				<div class="number" data-title="number_2_1" onclick="move(this)">8</div>
+				<div id="mask"></div>
+			</div>
+			<div class="game-control">
+				<div class="game-time">
+					<span>time:</span><span id="time">0</span><span>s</span>
+				</div>
+				<div class="game-step">
+					<span>step:</span><span id="step">0</span>
+				</div>
+				<div class="control">
+					<button onclick="start()">开始</button>
+					<button onclick="again()">重来</button>
+				</div>
+			</div>
+		</div>
+		<script src="src/jquery-2.0.0.min.js"></script>
+		<script src="src/index.js"></script>
+		<script type="text/javascript">
+			init();
+		</script>
+	</body>
+</html>
